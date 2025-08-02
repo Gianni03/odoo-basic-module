@@ -1,0 +1,35 @@
+<odoo>
+  <record id="view_tree_mi_modelo" model="ir.ui.view">
+    <field name="name">mi.modelo.tree</field>
+    <field name="model">mi.modelo</field>
+    <field name="arch" type="xml">
+      <tree string="Mi Modelo">
+        <field name="name"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_form_mi_modelo" model="ir.ui.view">
+    <field name="name">mi.modelo.form</field>
+    <field name="model">mi.modelo</field>
+    <field name="arch" type="xml">
+      <form string="Mi Modelo">
+        <sheet>
+          <group>
+            <field name="name"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="action_mi_modelo" model="ir.actions.act_window">
+    <field name="name">Mi Modelo</field>
+    <field name="res_model">mi.modelo</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <menuitem id="menu_mi_modulo_root" name="Mi Modelo"/>
+  <menuitem id="menu_mi_modelo" name="Mi Modelo" action="action_mi_modelo" parent="menu_mi_modulo_root"/>
+
+</odoo>

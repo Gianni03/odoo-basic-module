@@ -7,4 +7,9 @@
     'description': 'Un módulo básico de ejemplo',
     'installable': True,
     'application': True,
+    'data': [
+    'security/ir.model.access.csv',
+    'views/mi_modelo_views.xml',
+    ],
+
 }

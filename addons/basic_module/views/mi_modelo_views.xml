@@ -29,7 +29,12 @@
     <field name="view_mode">tree,form</field>
   </record>
 
-  <menuitem id="menu_mi_modulo_root" name="Mi Modelo"/>
+  <menuitem id="menu_mi_modulo_root" name="Mi Modulo"/>
   <menuitem id="menu_mi_modelo" name="Mi Modelo" action="action_mi_modelo" parent="menu_mi_modulo_root"/>
+  <act_window id="action_mi_modelo"
+            name="Mi Modelo"
+            res_model="mi.modelo"
+            view_mode="tree,form"
+            menu_id="menu_mi_modulo_model"/>
 
 </odoo>

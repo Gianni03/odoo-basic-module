@@ -5,3 +5,4 @@ class MiModelo(models.Model):
   _descripcion = 'Mi modelo Básico'
 
   name = fields.Char(string='Nombre')
+  lineas_ids = fields.One2many('mi.modelo.linea', 'modelo_id', string='Líneas')
